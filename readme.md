@@ -14,6 +14,8 @@ In addition, if you use geckodriver, then to work through a proxy server,
 you need to install Firefox Developer Edition:
 * https://developer.mozilla.org/en/docs/Mozilla/Firefox/Developer_Edition
 
+The script was tested on Windows 8,10 and Ubuntu 16.04
+
 ## Usage
 
 ```python
