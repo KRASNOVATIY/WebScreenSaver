@@ -19,10 +19,14 @@ you need to install Firefox Developer Edition:
 ```python
 from web_saver import WebScreenSaver
 
+FIREFOX_PATH = r'D:\webdrivers\gecko\geckodriver'
+FIREFOX_DEVELOPER_BIN = r"C:\Program Files\Firefox Developer Edition\firefox"
+PHANTOM_PATH = r'D:\webdrivers\phantomjs\bin\phantomjs'
+
 x = WebScreenSaver(
-    phantom_path=r"D:\webdrivers\phantomjs\bin\phantomjs",
-    firefox_path=r"D:\webdrivers\gecko\geckodriver",
-    firefox_dev_bin=r"C:\Program Files\Firefox Developer Edition\firefox"
+    phantom_path=PHANTOM_PATH,
+    firefox_path=FIREFOX_PATH,
+    firefox_dev_bin=FIREFOX_DEVELOPER_BIN
 )
 
 x.use_chrome()  # can not use, print message about it
